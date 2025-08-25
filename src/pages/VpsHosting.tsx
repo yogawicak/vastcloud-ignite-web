@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import VpsCalculator from '@/components/VpsCalculator';
 import { 
   Terminal, 
   Cpu, 
@@ -297,8 +298,11 @@ const VpsHosting = () => {
         </div>
       </section>
 
+      {/* VPS Calculator */}
+      <VpsCalculator />
+
       {/* Pricing Plans */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Paket VPS Hosting</h2>
